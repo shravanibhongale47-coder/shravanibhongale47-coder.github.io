@@ -134,7 +134,7 @@ section h2 .dim{color:var(--muted); font-weight:500;}
 }
 .about-photo-wrap img{width:100%;border-radius:6px;display:block;filter:grayscale(15%);}
 .about-photo-wrap::before{
-  content:'shravani_photo.jpeg'; position:absolute; top:-10px; left:16px; background:var(--bg);
+  content:'IMG_PROFILE.JPEG'; position:absolute; top:-10px; left:16px; background:var(--bg);
   padding:0 8px; font-family:var(--mono); font-size:0.7rem; color:var(--amber);
 }
 
@@ -182,22 +182,14 @@ section h2 .dim{color:var(--muted); font-weight:500;}
 .log-title{font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:0.3rem;}
 .log-body{color:var(--muted);font-size:0.92rem;}
 
-<!-- CERTIFICATIONS -->
-<section id="certs">
-  <div class="container fade-in">
-    <div class="sec-label">-- <span>certifications</span></div>
-    <h2>Verified <span class="dim">credentials</span></h2>
-    <div class="certs-grid">
-      <a href="https://learn.microsoft.com/en-us/users/shravanivikrambhongale-2695/credentials/b2620f708051cd44?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener" class="cert-card"><h4><i class="fas fa-certificate"></i>Power BI Data Analyst Associate</h4><p>Microsoft Certified</p><i class="fas fa-arrow-up-right-from-square"></i></a>
-      <a href="https://www.tcsion.com/iDH/India/Dashboard/course_detail/15305604/2" target="_blank" rel="noopener" class="cert-card"><h4><i class="fas fa-certificate"></i>Generative AI Essentials</h4><p>TCS iON Career Edge</p><i class="fas fa-arrow-up-right-from-square"></i></a>
-      <a href="https://www.theforage.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_adRs3keMEHwan47aF_1781267107918_completion_certificate.pdf" target="_blank" rel="noopener" class="cert-card"><h4><i class="fas fa-certificate"></i>GenAI-Powered Data Analytics Job Simulation</h4><p>Tata Group via Forage</p><i class="fas fa-arrow-up-right-from-square"></i></a>
-      <a href="https://www.credly.com/badges/85a8d0ad-8216-46f1-9295-52576efe7a12/linked_in_profile" target="_blank" rel="noopener" class="cert-card"><h4><i class="fas fa-certificate"></i>Artificial Intelligence Fundamentals</h4><p>IBM</p><i class="fas fa-arrow-up-right-from-square"></i></a>
-      <a href="https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiIxMTY5IiwiY2VydGlmaWNhdGVfdXJsIjoiaHR0cHM6XC9cL2NlcnRpZmljYXRlcy5zaW1wbGljZG4ubmV0XC9zaGFyZVwvOTM2ODMyM185Njc4ODkxMTc2Mjc3NzE4OTc0NC5wbmciLCJ1c2VybmFtZSI6IlNocmF2YW5pIFZpa3JhbSBCaG9uZ2FsZSJ9&utm_source=shared-certificate&utm_medium=lms&utm_campaign=shared-certificate-promotion" target="_blank" rel="noopener" class="cert-card"><h4><i class="fas fa-certificate"></i>Python Programming</h4><p>Simplilearn</p><i class="fas fa-arrow-up-right-from-square"></i></a>
-      <a href="https://www.mygreatlearning.com/certificate/ZAMBLUGH?referrer_code=GLVMLHESVQ6HY" target="_blank" rel="noopener" class="cert-card"><h4><i class="fas fa-certificate"></i>HTML </h4><p>Great Learning</p><i class="fas fa-arrow-up-right-from-square"></i></a>
-      <a href="https://www.mygreatlearning.com/certificate/RJYRKUJD?referrer_code=GLVMLHESVQ6HY" target="_blank" rel="noopener" class="cert-card"><h4><i class="fas fa-certificate"></i> CSS</h4><p>Great Learning</p><i class="fas fa-arrow-up-right-from-square"></i></a>
-    </div>
-  </div>
-</section>
+/* Certifications */
+.certs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.2rem;}
+.cert-card{background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:1.4rem;display:block;text-decoration:none;transition:all .2s ease;position:relative;}
+.cert-card:hover{border-color:var(--teal); transform:translateY(-4px); box-shadow:0 12px 30px rgba(45,212,191,0.1);}
+.cert-card i.fa-certificate{color:var(--amber);margin-right:0.5rem;}
+.cert-card i.fa-arrow-up-right-from-square{position:absolute; top:1.3rem; right:1.2rem; color:var(--muted); font-size:0.75rem;}
+.cert-card h4{font-size:1rem;color:var(--text);margin-bottom:0.3rem;padding-right:1.2rem;}
+.cert-card p{font-family:var(--mono);font-size:0.8rem;color:var(--muted);}
 
 /* Contact */
 #contact{background:var(--panel-2);border-top:1px solid var(--border);}
@@ -433,12 +425,13 @@ footer p span{color:var(--amber);}
     <div class="sec-label">-- <span>certifications</span></div>
     <h2>Verified <span class="dim">credentials</span></h2>
     <div class="certs-grid">
-      <div class="cert-card"><h4><i class="fas fa-certificate"></i>Power BI Data Analyst Associate</h4><p>Microsoft Certified</p></div>
-      <div class="cert-card"><h4><i class="fas fa-certificate"></i>Generative AI Essentials</h4><p>TCS iON Career Edge</p></div>
-      <div class="cert-card"><h4><i class="fas fa-certificate"></i>GenAI-Powered Data Analytics Job Simulation</h4><p>Tata Group via Forage</p></div>
-      <div class="cert-card"><h4><i class="fas fa-certificate"></i>Artificial Intelligence Fundamentals</h4><p>IBM</p></div>
-      <div class="cert-card"><h4><i class="fas fa-certificate"></i>Python Programming</h4><p>Simplilearn</p></div>
-      <div class="cert-card"><h4><i class="fas fa-certificate"></i>HTML & CSS</h4><p>Great Learning</p></div>
+      <a href="https://learn.microsoft.com/en-us/users/shravanivikrambhongale-2695/credentials/b2620f708051cd44?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener" class="cert-card"><h4><i class="fas fa-certificate"></i>Power BI Data Analyst Associate</h4><p>Microsoft Certified</p><i class="fas fa-arrow-up-right-from-square"></i></a>
+      <a href="https://www.tcsion.com/iDH/India/Dashboard/course_detail/15305604/2" target="_blank" rel="noopener" class="cert-card"><h4><i class="fas fa-certificate"></i>Generative AI Essentials</h4><p>TCS iON Career Edge</p><i class="fas fa-arrow-up-right-from-square"></i></a>
+      <a href="https://www.theforage.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_adRs3keMEHwan47aF_1781267107918_completion_certificate.pdf" target="_blank" rel="noopener" class="cert-card"><h4><i class="fas fa-certificate"></i>GenAI-Powered Data Analytics Job Simulation</h4><p>Tata Group via Forage</p><i class="fas fa-arrow-up-right-from-square"></i></a>
+      <a href="https://www.credly.com/badges/85a8d0ad-8216-46f1-9295-52576efe7a12/linked_in_profile" target="_blank" rel="noopener" class="cert-card"><h4><i class="fas fa-certificate"></i>Artificial Intelligence Fundamentals</h4><p>IBM</p><i class="fas fa-arrow-up-right-from-square"></i></a>
+      <a href="https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiIxMTY5IiwiY2VydGlmaWNhdGVfdXJsIjoiaHR0cHM6XC9cL2NlcnRpZmljYXRlcy5zaW1wbGljZG4ubmV0XC9zaGFyZVwvOTM2ODMyM185Njc4ODkxMTc2Mjc3NzE4OTc0NC5wbmciLCJ1c2VybmFtZSI6IlNocmF2YW5pIFZpa3JhbSBCaG9uZ2FsZSJ9&utm_source=shared-certificate&utm_medium=lms&utm_campaign=shared-certificate-promotion" target="_blank" rel="noopener" class="cert-card"><h4><i class="fas fa-certificate"></i>Python Programming</h4><p>Simplilearn</p><i class="fas fa-arrow-up-right-from-square"></i></a>
+      <a href="https://www.mygreatlearning.com/certificate/ZAMBLUGH?referrer_code=GLVMLHESVQ6HY" target="_blank" rel="noopener" class="cert-card"><h4><i class="fas fa-certificate"></i>HTML </h4><p>Great Learning</p><i class="fas fa-arrow-up-right-from-square"></i></a>
+      <a href="https://www.mygreatlearning.com/certificate/RJYRKUJD?referrer_code=GLVMLHESVQ6HY" target="_blank" rel="noopener" class="cert-card"><h4><i class="fas fa-certificate"></i> CSS</h4><p>Great Learning</p><i class="fas fa-arrow-up-right-from-square"></i></a>
     </div>
   </div>
 </section>
